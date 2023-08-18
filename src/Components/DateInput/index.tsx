@@ -8,7 +8,7 @@ const DateInput = ({label, ...props}: IDataInput) => {
   return (
     <div>
       <label htmlFor={label}>{label}</label>
-      <input type="date" name={label} id={label} />
+      <input type="date" name={label} id={label} {...props} />
     </div>
   )
 }
