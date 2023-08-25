@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import useFetch from '../Hooks/useFetch'
 import { IVenda } from '../Context/DataContext'
+import Loading from '../Components/Loading'
 
 type WithoutSalesDate = Omit<IVenda, 'data'>
 
@@ -10,6 +11,7 @@ const Venda = () => {
     data, 
     loading } = useFetch<WithoutSalesDate>(`https://data.origamid.dev/vendas/${id}`)
   
+  if(loading === true) return (<Loading />)
   if(data === null) return null;
 
   return (
