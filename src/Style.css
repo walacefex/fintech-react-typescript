@@ -111,6 +111,12 @@ ul {
   background-color: var(--color-3);
 }
 
+.daterane{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
 .resumo{
   font-size:  1.5rem;
   font-weight: 600;
