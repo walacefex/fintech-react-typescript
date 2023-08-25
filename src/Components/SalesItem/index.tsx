@@ -1,9 +1,12 @@
+import { NavLink } from 'react-router-dom'
 import { IVenda } from '../../Context/DataContext'
 
 const SalesItem = ({sales}: {sales: IVenda}) => {
   return (
     <div className='venda box'>
-      <a href='' style={{fontFamily: "monospace"}}>{sales.id}</a>
+      <NavLink to={`/vendas/${sales.id}`} style={{fontFamily: "monospace"}}>
+        {sales.id}
+      </NavLink>
      <div>
       {sales.nome}
      </div>
