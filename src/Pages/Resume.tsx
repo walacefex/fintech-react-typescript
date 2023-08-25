@@ -38,7 +38,7 @@ const Resume = () => {
           </span>
         </div>
       </div>
-      <div className='box'>
+      <div className='box mb'>
         Gráficos
       </div>
     </section>
