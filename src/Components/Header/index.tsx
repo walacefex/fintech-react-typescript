@@ -1,11 +1,14 @@
-import React from 'react'
 import DateRange from '../DataRange'
+import Months from '../Months'
 
 const Header = () => {
   return (
-    <div>
-      <DateRange />
-    </div>
+    <header className='mb'>
+      <div className='mb'>
+        <DateRange />
+      </div>
+      <Months />
+    </header>
   )
 }
 
